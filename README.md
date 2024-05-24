@@ -2,5 +2,5 @@ Esse diretório tem por objetivo armazenas toda as minhas aulas práticas e trab
 Matérias que estudei:
 <ul>
     <li>Iniciando com JavaScript  </li>
-    <li> </li>
+    <li> JavaScript Avançado - projeto: Controle de compras</li>
 </ul>
