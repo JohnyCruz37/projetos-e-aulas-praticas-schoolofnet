@@ -16,10 +16,39 @@
     </nav>
 
     <div class="container-fluid">
+        <div class="form d-flex gap-1 m-3">
+            <div class="form-group">
+                <input type="text" class="form-control" id="desc" placeholder="Description">
+            </div>
+            <div class="form-group">
+                <input type="text" class="form-control" id="amount" placeholder="Amount">
+            </div>
+            <div class="form-group">
+                <input type="text" class="form-control" id="value" placeholder="Value">
+            </div>
+            <span id="btnUpdate" style="display: none;">
+                <span id="inputIDUpdate"></span>
+                <button type="button" class="btn btn-success" onclick="updateData()"> Save </button>
+                <button type="button" class="btn btn-danger" onclick="resetForm()"> Cancel </button>
+            </span>
+            <span id="btnAdd">
+                <button type="button" class="btn btn-primary" onclick="addData()"> Add </button>
+                <button type="button" class="btn btn-warning" onclick="resetForm()"> Reset </button>
+                <button type="button" class="btn btn-danger" onclick="deleteList()"> clean </button>
+            </span>
+        </div>
+        <span id="erro" style="display: none;"></span>
         <table id="listTable" class="table">
-
         </table>
+
     </div>
+    <nav class="navbar fixed-bottom">
+        <div class="container">
+            <h4 class="text-center text-success">Total: 
+                <span id="totalValue">$ 0,00 </span>
+            </h4>
+        </div>
+    </nav>
 
     <script src="./js/config.js"></script>
     <script src="./js/main.js"></script>
